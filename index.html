@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Percobaan</title>
+</head>
+<body>
+    <h1 id="title">Form Pengisian</h1>
+    <p id="description">Ini adalah form pengisian saya</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Nama
+            <input type="text" id="name" required placeholder="nama anda">
+        </label>
+        <label for="email" id="email-label">
+            E-mail
+            <input type="email" id="email" required placeholder="email anda">
+        </label>
+        <label for="number" id="number-label">
+            Umur
+            <input type="number" id="number" min="18" max="30" required placeholder="umur">
+        </label>
+        <div>
+            pilih hobi
+            <select id="dropdown">
+                <option value="">renang</option>
+                <option value="">membaca</option>
+            </select>
+        </div>
+        <div>
+            pilih jenis kelamin anda : <br>
+            <label for="laki-laki">
+                laki-laki
+                <input name="jenis-kelamin"id="laki-laki" type="radio" value="1">
+            </label>
+            <label for="perempuan">
+                perempuan
+                <input name="jenis-kelamin"id="perempuan"type="radio" value="0">
+            </label>
+        </div>
+        <div>
+            pilih aktivitas yang anda suka <br>
+            <label for="menulis">
+                menulis
+                <input type="checkbox" value="menulis">
+            </label>
+            <label for="membaca">
+                membaca
+                <input type="checkbox" value="membaca">
+            </label>
+        </div>
+        <div>
+            tuliskan komentar anda <br>
+            <textarea name="komen" id="komen" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <br>
+            <button type="submit" id="submit">submit</button>
+        </div>
+    </form>
+
+
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
